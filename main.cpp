@@ -56,7 +56,7 @@ double inverseSensorModel(double x, double y, double theta, double xi, double yi
     }
 
     //******************Evaluate the three cases**********************//
-    if (r > min((double)Zmax, Zk + alpha / 2) || fabs(phi - thetaK) > beta / 2 || Zk > Zmax || Zk < Zmin) {
+    if (r > min((double)Zmax, Zk + alpha / 2) || fabs(phi - thetaK) > beta / 2 || Zk < Zmin) {
         return l0;
     }
     else if (Zk < Zmax && fabs(r - Zk) < alpha / 2) {
